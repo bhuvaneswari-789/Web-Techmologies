@@ -1,0 +1,191 @@
+<html>
+<head>
+<title>booking</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<link rel="stylesheet" href="book.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main-text" >
+		 <center><h1>BHUVANAS mart..</h1></center>
+		 <center><h2>OREDER your product now...</h2></center>
+	</div>		
+	<form  method="post" action="http://localhost/mysite/order.php" onsubmit="return validation()" >
+		 <div class="book">
+	
+		 	<h5>Name:</h5><input type="text" placeholder="Enter Your Name" id="user" name="username">
+		 	<span id="userr"></span><br>
+		 	<h5>Contact no:</h5>
+		 	<input type="text" placeholder="Phone number" id="num" name="phoneno">
+		 	<span id="numberr"></span><br>
+		 	<h5 >Email:</h5>
+		 	<input type="email" placeholder="Enter your email" id="email" name="email"><br>
+		 	<span id="emaill"></span>
+		 
+		 	<h5>Password: </h5>
+		 	<input type="password" placeholder="Enter email password" id="pass" name="password"><br>
+		 	<span id="perror"></span>
+		 	
+		 	
+		 	
+		 	
+		 	<h5>Address</h5>
+		 	<input type="text" placeholder="enter address" id="address" name="address"><br>
+		 	<h5>Transaction</h5>
+		 	<input type="radio" id="transaction" name="transaction">phonepay<br> 
+		 	<input type="radio" id="transaction1" name="transaction">UPI<br> 
+		        <input type="radio" id="transaction2" name="transaction">GPay<br>
+		        <input type="radio" id="transaction3" name="transaction">Paytm<br>
+		        <input type="radio" id="transaction4" name="transaction">COD<br>   
+		 	
+		 	<h5>payment:</h5>
+		 	<input type="amount" placeholder="Enter amount" id="payment" name="payment" >
+		 	
+		 	<br><br>
+		 	<input type="checkbox" id="term" name="terms">Accept Terms and Conditions<br> 
+		 	<span id="termm"></span>
+		       <center><button style="background-color:#1e90ff" id="btn">SUBMIT</button></center>
+            
+     		</div>
+	</form>
+<script>
+function validate()
+{ 
+    var name = document.getElementById("user").value;
+    var contact = document.getElementById("num").value;
+    var email = document.getElementById("email").value;
+  
+ 
+var pass=document.getElementById("pass").value;
+   
+    var terms = document.getElementById("term").checked;
+//name
+if(name=="")
+{
+document.getElementById("userr").innerText="should not be null";
+return false;
+}
+else
+{
+document.getElementById("userr").innerText="";
+}
+var pattern1=/^[a-zA-Z\s]+$/;
+var check1=pattern1.test(name);
+if(check1!=true)
+{
+document.getElementById("userr").innerText="Should contain only alphabets";
+return false;
+}
+else
+{
+document.getElementById("userr").innerText="";
+}
+//phone number
+if(contact=="")
+{
+document.getElementById("numberr").innerText="should not be null";
+return false;
+}
+else
+{
+document.getElementById("numberr").innerText="";
+}
+var pattern2=/^(0|91)*[6-9][0-9]{9}$/;
+var check2=pattern2.test(contact);
+if(check2!=true)
+{
+document.getElementById("numberr").innerText="enter a valid mobile number";
+return false;
+}
+else
+{
+document.getElementById("numberr").innerText="";
+}
+//email
+if(email=="")
+{
+document.getElementById("emaill").innerText="should not be null";
+return false;
+}
+else
+{
+document.getElementById("emaill").innerText="";
+}
+var pattern3=/^[a-z0-9._+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+var check3=pattern3.test(email);
+if(check3!=true)
+{
+document.getElementById("emaill").innerText="Please enter valid email address";
+return false;
+}
+else
+{
+document.getElementById("emaill").innerText="";
+}
+
+
+if (!terms) 
+{
+ document.getElementById("termm").textContent = "You must accept the Terms and Conditions.";
+ return false;
+}
+if(pass.length<8)
+{
+document.getElementById("passs").innerText="password shoulb be of atleast 8 characters";
+return false;
+}
+else
+{
+document.getElementById("passs").innerText="";
+}
+if(pass=="")
+{
+document.getElementById("passs").innerText="should not be null";
+return false;
+}
+else
+{
+document.getElementById("passs").innerText="";
+}
+if(pass.search(/[0-9]/)==-1)
+{
+document.getElementById("passs").innerText="should contain digits";
+return false;
+}
+else
+{
+document.getElementById("passs").innerText="";
+}
+if(pass.search(/[a-z]/)==-1)
+{
+document.getElementById("passs").innerText="should contain small letters";
+return false;
+}
+if(pass.search(/[A-Z]/)==-1)
+{
+document.getElementById("passs").innerText="should contain capital letters";
+return false;
+}
+else
+{
+document.getElementById("passs").innerText="";
+}
+if(pass.search(/[!\@\#\$\%\^\&\*\(\)\_\-\+\=\<\,\>\?]/)==-1)
+{
+document.getElementById("passs").innerText="should contain special characters";
+return false;
+}
+else
+{
+document.getElementById("passs").innerText="";
+}
+}
+</script>
+
+	
+</body>
+</html>
+

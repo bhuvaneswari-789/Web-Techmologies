@@ -1,0 +1,888 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-navbar{
+    width: 100%;
+    height: 7vh;
+    background-color: #a9a9a926;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    /*buttons are moved to left*/
+}
+.top-icons{
+    margin-left: 45px;
+}
+.top-icons i{
+    font-size: 20px;
+    color: #1c1c50;
+    margin-left: 10px;
+    cursor: pointer;
+    /*left side icons are moved to some right*/
+}
+.other-links{
+    margin-right: 33px;
+}
+.other-links i{
+    color: #1c1c50;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    /*right side icons are moved to left*/
+}
+#btn-login{
+    width: 100px;
+    border: 2px solid #1c1c50;
+    color: #1c1c50;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 5vh;
+    transition: 0.5s ease;
+    cursor: pointer;
+ /*border to login button and underline and blue color text*/
+}
+#btn-login a{
+    text-decoration: none;
+    color: #1c1c50;
+    transition: 0.5s ease;
+    /*underline is removed and text in black color*/
+}
+#btn-login a:hover{
+    background-color: #1c1c50;
+    color: white;
+    /*text background in black and text in white and the remaining part is in transparent in color*/
+}
+#btn-login:hover{
+    background-color: #1c1c50;
+    color: white;
+    /*text in black and the remaining all area in white when ever the cursor is placed on the button the all area is in black when the cursor is place on the text only the text is visible*/
+}
+#btn-signup{
+    width: 100px;
+    border: 2px solid #1c1c50;
+    color: #1c1c50;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 5vh;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn-signup a{
+    text-decoration: none;
+    color: #1c1c50;
+    transition: 0.5s ease;
+}
+#btn-signup a:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+#btn-signup:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+@media screen and (max-width:500px){
+    .top-icons{
+        margin-left: 30px;
+    }
+    .top-icons i{
+        font-size: 15px;
+    }
+    .other-links i{
+        font-size: 15px;
+    }
+    #btn-login{
+        width: 60px;
+        height: 5vh;
+    }
+    #btn-signup{
+        width: 70px;
+        height: 5vh;
+    }
+    /*screen is responsive the width is increase and decrease but the text cont be responsive*/
+}
+@media screen and (max-width:350px){
+    .top-icons{
+        margin-left: 10px;
+    }
+    .top-icons i{
+        font-size: 10px;
+    }
+    .other-links{
+        margin-right: 10px;
+    }
+    .other-links i{
+        font-size: 10px;
+    }
+    #btn-login{
+        width: 50px;
+        height: 5vh;
+        font-size: 13px;
+    }
+    #btn-signup{
+        width: 60px;
+        height: 5vh;
+        font-size: 13px;
+    }
+    /*screen is responsive and the text buttons are also are responsive*/
+}
+@media screen and (max-width:350px){
+    .top-icons{
+        margin-left: 5px;
+    }
+    .top-icons i{
+        font-size: 12px;
+    }
+    .other-links{
+        margin-right: 10px;
+    }
+    .other-links i{
+        font-size: 12px;
+    }
+    #btn-login{
+        width: 40px;
+        height: 5vh;
+        font-size: 10px;
+    }
+    #btn-signup{
+        width: 50px;
+        height: 5vh;
+        font-size: 10px;
+    }
+}
+/* home section */
+.home-section{
+    width: 100%;
+    height: 93vh;
+    background-color: #a9a9a926;
+    /*no changes*/
+}
+/* navbar */
+#navbar{
+    background-color: #1c1c50;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+}
+#navbar .nav-link{
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: 0.5s ease;
+}
+#navbar .nav-link:hover{
+    color: white;
+    border-radius: 5px;
+}
+.dropdown li a{
+    color: white;
+}
+#search-btn{
+    color: white;
+    border:  1px solid white;
+}
+#search-btn:hover{
+    background-color: #1c1c50;
+    /*background is changed and the text is in bold and white color */
+}
+/* navbar */
+/* home content */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    font-family: 'Roboto Slab', serif;
+    /*text is centered and the shoes image also centered and it is override on the images*/
+}
+.home .img{
+    flex: 1 1 400px;
+    /*text is centered and the image moved to left side and the other images are override on the shoes image*/
+}
+.home .img img{
+    width: 100%;
+    /*text is moved to left and the shoes image is moved to right side */
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-top: 30px;
+    /*space is between to the navbar and the text and the image but the image is slightly override and the sho image is right*/
+}
+.content h3{
+    margin-left: 70px;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: #1c1c50;
+    font-weight: bold;
+    /*all h3 tags get be modified and the font has been increased and styled*/
+}
+.content h3 span{
+    font-size: 40px;
+    /*h3 sige is some what decreased*/
+}
+.content p{
+    margin-left: 70px;
+    color: #1c1c50;
+    /*all paragraphs are moved to right sie some margin space is provided for paragraph and the image is placed right and not over ride on the other images*/
+}
+.content #shopnow{
+    margin-left: 70px;
+    width: 200px;
+    height: 38px;
+    border: 2px solid #1c1c50;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+    /*shop now button is moved to right with border the text in button is black and the backgroung is transition  */
+}
+.content #shopnow:hover{
+    background-color: #1c1c50;
+    color: white;
+    /*text is will change to white when the cursor is placed and the background is dark*/
+}
+@media screen and (max-width:800px){
+    .content h3{
+        margin-left: 50px;
+        font-size: 40px;
+    }
+    .content p{
+        margin-left: 50px;
+    }
+    .content #shopnow{
+        margin-left: 50px;
+    }
+    /*there will be changes in h3 and paragraph are only the responsive and the button shopnow on left side*/
+}
+@media screen and (max-width:570px){
+    .content h3{
+        margin-left: 20px;
+    }
+    .content p{
+        margin-left: 20px;
+    }
+    .content #shopnow{
+        margin-left: 20px;
+    }
+    /*all components are responsive and the iamges are not override */
+
+}
+@media screen and (max-width:799px){
+    .home-section{
+        height: 150vh;
+    }
+}
+@media screen and (max-width:799px){
+    .home-section{
+        height: 150vh;
+    }
+    /*images are not override */s
+}
+/* home content */
+/* home section */
+
+/* top cards */
+#top-cards{
+    margin-top: 30px;
+    font-family: 'Roboto Slab', serif;
+    /*the text is arranged randomlywhen the screen is minimized*/
+}
+#top-cards .card img{
+    height: 60vh;
+    /*images are override on the text*/
+}
+#top-cards h5{
+    color: #1c1c50;
+    font-weight: bold;
+    /* all the images are override*/
+}
+#top-cards button{
+    width: 150px;
+    height: 33px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background: transparent;
+    color: #1c1c50;
+    border: 2px solid #1c1c50;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#top-cards button:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+/* top cards */
+
+/* banner */
+.banner{
+    width: 100%;
+    height: 50vh;
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(banner.jpg);
+    /*banner is added*/
+}
+.banner .content{
+    text-align: center;
+    padding-top: 100px;
+    /*text is override on the banner in the center*/
+}
+.banner .content h1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+    /* heading text is in white coloron the banner*/
+}
+.banner .content p{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+    /*paragraph text is in white color on the banner*/
+}
+#bannerbtn button{
+    width: 150px;
+    height: 38px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s ease;
+    cursor: pointer;
+    /*text and border is in white color and the background of the button will be the banner to shop now*/
+}
+#bannerbtn button:hover{
+    background-color: #1c1c50;
+    border: none;
+    /*shopnow button backgroundcolor is chaged to violet when the cursor is placed on the button of the text*/
+}
+
+/* banner */
+/* banner2 */
+.banner2{
+    width: 100%;
+    height: 50vh;
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(banner2.jpg);
+    /*banner2 is created and the text is in violet colour and the buttan is in white color in in left side*/
+    
+}
+.banner2 .content2{
+    text-align: center;
+    padding-top: 100px;
+    /*the text and the button is aligned to center and the button is in ehite color*/
+}
+.banner2 .content2 h1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+    /*h1  tag -get content -text is changed to white color*/
+}
+.banner2 .content2 p{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+/*p tag content text -lorem-is changed to white color which is on the banner2*/
+}
+#bannerbtn2 button{
+    width: 150px;
+    height: 38px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s ease;
+    cursor: pointer;
+    /*button size is increased and the background of button is banner only and the text inside the button is white color*/
+}
+#bannerbtn2 button:hover{
+    background-color: #1c1c50;
+    border: none;
+    /*when cursor is placed on the text of the button the back ground of the button on the banner is changed to violet the the button is highlited*/
+}/* banner3 */
+/* banner3 */
+.banner3{
+    width: 100%;
+    height: 50vh;
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(shoebann3.jpeg);
+    /*banner2 is created and the text is in violet colour and the buttan is in white color in in left side*/
+    
+}
+.banner3 .content3{
+    text-align: center;
+    padding-top: 100px;
+    /*the text and the button is aligned to center and the button is in ehite color*/
+}
+.banner3 .content3 h1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+    /*h1  tag -get content -text is changed to white color*/
+}
+.banner3 .content3 p{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+/*p tag content text -lorem-is changed to white color which is on the banner2*/
+}
+#bannerbtn3 button{
+    width: 150px;
+    height: 38px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s ease;
+    cursor: pointer;
+    /*button size is increased and the background of button is banner only and the text inside the button is white color*/
+}
+#bannerbtn3 button:hover{
+    background-color: #1c1c50;
+    border: none;
+    /*when cursor is placed on the text of the button the back ground of the button on the banner is changed to violet the the button is highlited*/
+}/* banner3 */
+/*BANNER4*/
+.banner4{
+    width: 100%;
+    height: 50vh;
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(banner4.jpeg);
+    /*banner2 is created and the text is in violet colour and the buttan is in white color in in left side*/
+    
+}
+.banner4 .content4{
+    text-align: center;
+    padding-top: 100px;
+    /*the text and the button is aligned to center and the button is in ehite color*/
+}
+.banner4 .content4 h1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+    /*h1  tag -get content -text is changed to white color*/
+}
+.banner4 .content4 p{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+/*p tag content text -lorem-is changed to white color which is on the banner2*/
+}
+#bannerbtn4 button{
+    width: 150px;
+    height: 38px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s ease;
+    cursor: pointer;
+    /*button size is increased and the background of button is banner only and the text inside the button is white color*/
+}
+#bannerbtn4 button:hover{
+    background-color: #1c1c50;
+    border: none;
+    /*when cursor is placed on the text of the button the back ground of the button on the banner is changed to violet the the button is highlited*/
+}/* banner4 */
+
+/*BANNER5*/
+.banner5{
+    width: 100%;
+    height: 50vh;
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(glassbanner4.jpeg);
+    /*banner2 is created and the text is in violet colour and the buttan is in white color in in left side*/
+    
+}
+.banner5 .content5{
+    text-align: center;
+    padding-top: 100px;
+    /*the text and the button is aligned to center and the button is in ehite color*/
+}
+.banner5 .content5 h1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+    /*h1  tag -get content -text is changed to white color*/
+}
+.banner5 .content5 p{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 3px;
+/*p tag content text -lorem-is changed to white color which is on the banner2*/
+}
+#bannerbtn5 button{
+    width: 150px;
+    height: 38px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s ease;
+    cursor: pointer;
+    /*button size is increased and the background of button is banner only and the text inside the button is white color*/
+}
+#bannerbtn5 button:hover{
+    background-color: #1c1c50;
+    border: none;
+    /*when cursor is placed on the text of the button the back ground of the button on the banner is changed to violet the the button is highlited*/
+}/* banner5 */
+
+
+/* product cards */
+#product-cards{
+    font-family: 'Roboto Slab', serif;
+    margin-top: 100px;
+    /*space between banner and the cards are increased nd the text in the cards are changed in all cards*/
+}
+#product-cards .card{
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    /*there is no much difference to the past*/
+}
+#product-cards h1{
+    margin-top: 30px;
+    color: #1c1c50;
+    text-shadow: 1px 1px 1px black;
+    /*h1 tags content is modified according to the give styles*/
+}
+#product-cards h3{
+    letter-spacing: 3px;
+    color: #1c1c50;
+    text-shadow: 0px 1px 1px black;
+    font-weight: bold;
+    /*h3 tag content is changed to bold and the size is increased*/
+}
+#product-cards h5 span{
+    float: right;
+    color: #1c1c50;
+    cursor: pointer;
+    /*the span icon i.e the shopping trolley image is moved to right of the card in all cards*/
+}
+.checked{
+    color: rgb(255, 187, 0);
+    /*the color of the stars which has been checked all are changed to yellow color in all cards*/
+}
+#viewmorebtn{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-decoration: none;
+    margin-top: 30px;
+    width: 200px;
+    height: 32px;
+    color: #1c1c50;
+    letter-spacing: 5px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid #1c1c50;
+    transition: 0.5s ease;
+    /*link of viewmore option in b.html page is changed to button with a box and the text is in black and background in white when it is clicked it is redirect to b3bann2cloth page */
+}
+#viewmorebtn:hover{
+    background-color: #1c1c50;
+    color: white;
+    /*just the background has changed and same as previous modifications*/
+}
+/* product cards */
+
+
+
+
+
+
+/* offer */
+#offer{
+    margin-top: 50px;
+    /* the offer icons the space is between product content and the offer icons has been increased in all pages*/
+}
+#offer i{
+    font-size: 60px;
+    color: #1c1c50;
+    /*the size of the offericons and the color has been changed increased in all pages */
+}
+/* offer */
+
+/* footer */
+#footer{
+    padding: 0 0 30px 0;
+    color: #d0d0d0;
+    font-size: 14px;
+    background: #1c1c50;
+    font-family: 'Roboto Slab', serif;
+    /*background has been changed to violet color of the footer section and the text and space in all pages and the all text in white color and the links in blue color*/
+}
+#footer .footer-top{
+    padding: 60px 0 30px;
+    background: #1c1c50;
+    color: white;
+    /*space beteen the border of the background color viloet and the text in thet bgcolor has been increased */
+}
+#footer .footer-top .footer-contact h3{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    /* h3 contents changed*/
+}
+#footer .footer-top .footer-contact h4{
+    font-size: 22px;
+    margin:  0 0 300px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+    /*h4 contents get changed in the footer part*/
+}
+#footer .footer-top .footer-contact p{
+    font-size: 14px;
+    margin: 0;
+    color: white;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top h4{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+}
+#footer .footer-top .footer-links{
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*dots has been removed in the link tags */
+}
+#footer .footer-top .footer-links ul li{
+    padding-right: 10px 0;
+    display: flex;
+    align-items: center;
+}
+#footer .footer-top .footer-links ul li:first-child{
+    padding: 0;
+}
+#footer .footer-top .footer-links ul li a{
+    color: white;
+    line-height: 2;
+    /*all the links in the footer part will be in white colorchanged from blue to white icons are in the blue color only*/
+}
+#footer .footer-top .socail-links a{
+    font-size: 18px;
+    display: inline-block;
+    color: white;
+    line-height: 1;
+    padding-right: 4px;
+    border-radius: 50px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.5s ease;
+    /* space between the icons and the color of the social media icons are changed to white color from bluecolor*/ 
+}
+#footer .copyright{
+    text-align: center;
+    float: left; 
+    /*the 2 line of text in the end of the footer will be changed to a single line text*/
+}
+#footer .credits{
+    float: right;
+    text-align: center;
+    /*designed by SAcoders has been moved to rightmost side */
+}
+/* footer */
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    background-color: #1c1c50;
+    border-radius: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    align-items: center;
+    line-height: 50px;
+    /*uparrow button is moved to rightmost side and in the blackcolor and over ride on the footer part*/
+}
+/* login */
+.login{
+    width: 50%;
+    margin: 20px;
+    font-family: 'Roboto Slab', serif;
+    /*text has been change and space has providedto all text in the login page*/
+}
+#side1{
+    background-color: #1c1c50;
+    height: 76vh;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    /*background color is applied to the signup which is in the left side and the text in blackcolor and the signup text in blue color*/
+}
+#side1 h3{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 200px;
+    align-items: center;
+    text-align: center;
+    /*h3 text moved to send of the slide1 and the signup button in bluue and the text of signup in blue only*/
+}
+#side1 p{
+    color: white;    
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    /*p tag text is also changed to white which is aligned black text to center has been changed to white color text*/
+}
+#btn{
+    align-items: center;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    /*a button is created for signup with roundedpill box text is in blue colr with A underline to it*/
+}
+#btn a{
+    text-decoration: none;
+    color: white;
+    /*text in the button has changed to white and the underline has removed*/
+}
+#side2{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    align-items: center;
+    text-align: center;
+    /*the remaining part in the login page i.e., text -slide2 the text which is moved from left to the centered*/
+}
+#side2 h3{
+    margin-top: 50px;
+    color: #1c1c50;
+    font-weight: bold;
+    /*space is provided between top of the navbar and the text of the slide 2 and h3 tag has been modified to bold*/
+}
+#side2 .inp{
+    margin-top: 32px;
+    /*space is provided between the h3 and the input text*/
+}
+#side2 input{
+    width: 500px;
+    margin-top: 20px;
+    height: 36px;
+    align-items: center;
+    /*the size of the input boxes has increased in slide 2*/
+}
+#side2 p{
+    margin-top: 20px;
+    cursor: pointer;
+}
+#side2 .icons i{
+    margin-left: 10px;
+    cursor: pointer;
+}
+#login{
+    margin-top: 10px;
+    /*space between the icons and the above and below*/
+}
+#login button{
+    width: 200px;
+    height: 32px;
+    color: white;
+    background-color: #1c1c50;
+    border: none;
+    font-weight: bold;
+    /*background to the login button has chaned toblue color and the text in the button is white*/
+}
+@media screen and (max-width:992px){
+    #side2 input{
+        width: 300px;
+    }
+}/*the input fileds are get minimised when the screen size is 300px*/
+@media screen and (max-width:330x){
+    #side2 input{
+        width: 200px;
+    }
+}/*input fields are changed when the screen width is 200px*/
+/* login */
+
+/* about */
+#about{
+    margin-top: 50px;
+    /*space between navbar and the text has been increased*/
+    
+}
+#about h1{
+    text-align: center;    
+    font-weight: bold;
+    color: #1c1c50;
+     /* about us text has been shifted from left to right */
+}
+/* about */
+#about{
+    margin-top: 50px;
+}
+#about h1{
+    text-align: center;    
+    font-weight: bold;
+    color: #1c1c50;
+}
+/* about */
+
+/* contact */
+#contact{
+    margin-top: 50px;
+    /*space between the nave bar and the heading tag */
+}
+#contact h1{
+    color: #1c1c50;
+    text-shadow: 0px 0px 1px black;
+}
+#contact .card{
+    height: 80px;
+    margin-top: 20px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    /*space has been increased in the input fields*/
+}
+#contact .card i{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #1c1c50;
+    font-weight: bold;
+    letter-spacing: 3px;
+    /*thext in the input fields has been adjusted to down in the inputfield*/
+}
+#contact .card h6{
+    margin-left: 10px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #1c1c50;
+    /*text in the inputfields has changed into bold and space between the letters */
+}
+#messagebtn button{
+    margin-top: 30px;
+    width: 200px;
+    height: 33px;
+    background: transparent;
+    border: 2px solid #1c1c50;
+    color: #1c1c50;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: 0.5s ease;
+    /*border to the message button and the background is white when the cursor is placed also*/
+}
+#messagebtn button:hover{
+    background-color: #1c1c50;
+    color: white;
+    /*background has been changed when the cursor is placed on the message button*/
+}
+/* contact */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
